@@ -25,7 +25,7 @@ public class Categoria {
 	private Long id;
 	
 	@NotBlank (message = "Obrigatorio identificar o nome do produto")
-	@Size(min = 4, max = 100, message = "O nome do produto tem que ter no minimo 4 caracteres")
+	@Size(min = 5, max = 100, message = "O nome do produto tem que ter no minimo 5 caracteres e no máximo 100 caracteres")
 	private String tipo;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
